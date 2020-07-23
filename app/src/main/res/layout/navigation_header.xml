@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@color/colorAccent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="250dp">
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_marginBottom="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_threads"/>
+    <TextView
+        android:fontFamily="@font/aldrich"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:text="Threads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"/>
+
+</LinearLayout>

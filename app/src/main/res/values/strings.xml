@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ThreadsControlApplication</string>
+    <string name="navigation_drawer_open">open navigation drawer</string>
+    <string name="navigation_drawer_close">close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="font_types">
+        <item>aldrich</item>
+        <item>alfa_slab_one</item>
+        <item>amatica_sc</item>
+        <item>chelsea_market</item>
+        <item>delius_unicase</item>
+        <item>montaga</item>
+        <item>oleo_script_swash_caps</item>
+    </array>
+    <array name="color_types">
+        <item>event_color_1</item>
+        <item>event_color_2</item>
+        <item>event_color_3</item>
+        <item>event_color_4</item>
+        <item>event_color_5</item>
+    </array>
+    <array name="user_types">
+        <item>user_48</item>
+        <item>user_96</item>
+        <item>user_male_200</item>
+    </array>
+</resources>

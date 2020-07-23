@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/notification_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/aldrich"
+                android:layout_centerHorizontal="true"
+                android:text="Push_Notification"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignTop="@id/notification_header"
+                android:layout_toRightOf="@id/notification_header"
+                android:src="@drawable/notification" />
+
+            <TextView
+                android:id="@+id/p_notification_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/aldrich"
+                android:text="Notification_Message:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/p_notification"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/p_notification_label"
+                android:background="@drawable/editext"
+                android:gravity="start"
+                android:hint="notification message to be sent"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="3"
+                android:scrollbars="vertical"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/p_send_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_notification"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/aldrich"
+                android:text="send_notification"
+                android:textColor="@android:color/white" />
+
+           <!-- <Button
+                android:id="@+id/p_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p_send_notification"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/aldrich"
+                android:text="send_message"
+                android:textColor="@android:color/white" />-->
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

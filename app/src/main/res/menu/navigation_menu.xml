@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/events" android:title="Live_Events" android:icon="@drawable/ic_event_available_black_24dp"/>
+        <item android:id="@+id/notify" android:title="Notify" android:icon="@drawable/ic_notifications"/>
+        <item android:id="@+id/create_event" android:title="Create_Event" android:icon="@drawable/ic_event_note"/>
+    </group>
+    <item android:title="Attendees">
+        <menu>
+            <item android:title="Overall_Attendence" android:id="@+id/total_present" android:icon="@drawable/ic_equalizer_black_24dp"></item>
+        </menu>
+    </item>
+</menu>

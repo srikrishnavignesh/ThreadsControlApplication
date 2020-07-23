@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/user_male_200"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/user_img"/>
+        <TextView
+            android:fontFamily="@font/aldrich"
+            android:layout_alignTop="@id/user_img"
+            android:layout_toRightOf="@id/user_img"
+            android:textColor="@android:color/white"
+            android:id="@+id/participant_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:" />
+        <TextView
+            android:fontFamily="@font/aldrich"
+            android:layout_alignBottom="@id/user_img"
+            android:layout_toRightOf="@id/user_img"
+            android:textColor="@android:color/white"
+            android:id="@+id/participant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Participant_name:" />
+        <ImageView
+            android:id="@+id/phone_img"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/user_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/user_phone"/>
+        <TextView
+            android:fontFamily="@font/aldrich"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/phone_img"
+            android:id="@+id/phone_number"
+            android:layout_alignBottom="@id/phone_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone_Number:"/>
+        <ImageView
+            android:id="@+id/payment"
+            android:src="@drawable/payment_not_done"
+            android:layout_centerVertical="true"
+            android:layout_width="75dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
